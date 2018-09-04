@@ -1,5 +1,7 @@
 
-# последовательность Фибоначчи без рекурсии
+# последовательность Фибоначчи без рекурсии (занимает много памяти)
+
+import time
 
 
 def fibonacci(n):
@@ -18,5 +20,9 @@ def fibonacci(n):
     return arr
 
 
-n = 1000
+start_time = time.time()
+
+n = 100
 print(fibonacci(n))
+
+print('Время:', time.time() - start_time)
